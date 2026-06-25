@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FPZY04DX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-K4FPZY04DX');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8396986479593606"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNP×RED° - 国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ</title>
+
+    <!-- OGP Meta Tags -->
+    <meta property="og:title" content="CNP×RED° - 国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ">
+    <meta property="og:description"
+        content="国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ。リアル×デジタルが融合した、新時代エンタメを体験しよう">
+    <meta property="og:image" content="./ogp-image.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CNP×RED°">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CNP×RED° - 国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ">
+    <meta name="twitter:description"
+        content="国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ。リアル×デジタルが融合した、新時代エンタメを体験しよう">
+    <meta name="twitter:image" content="./ogp-image.png">
+    <meta name="twitter:site" content="@cnp_red">
+
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ。リアル×デジタルが融合した、新時代エンタメを体験しよう">
+    <meta name="keywords" content="CNP, RED, TOKYO TOWER, NFT, デジタルアート, エンターテインメント, 忍者, コラボレーション">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* 忍者風グリッチエフェクト */
+        @keyframes glitch {
+
+            0%,
+            100% {
+                transform: translate(0);
+            }
+
+            10% {
+                transform: translate(-2px, 1px);
+            }
+
+            20% {
+                transform: translate(1px, -1px);
+            }
+
+            30% {
+                transform: translate(-1px, 2px);
+            }
+
+            40% {
+                transform: translate(2px, -2px);
+            }
+
+            50% {
+                transform: translate(-2px, -1px);
+            }
+
+            60% {
+                transform: translate(1px, 2px);
+            }
+
+            70% {
+                transform: translate(-1px, -2px);
+            }
+
+            80% {
+                transform: translate(2px, 1px);
+            }
+
+            90% {
+                transform: translate(-2px, -1px);
+            }
+        }
+
+        /* 忍者風のスモークエフェクト */
+        @keyframes smokeRise {
+            0% {
+                opacity: 0.8;
+                transform: translateY(0) scale(0.8);
+            }
+
+            50% {
+                opacity: 0.4;
+                transform: translateY(-20px) scale(1.2);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateY(-50px) scale(1.5);
+            }
+        }
+
+        /* 近未来風パルスエフェクト */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
+            }
+        }
+
+        /* 忍者風の文字浮遊エフェクト */
+        @keyframes floatText {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* 穏やかなスライドイン */
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 1s ease-out;
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 1s ease-out;
+        }
+
+        .slide-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease-out;
+        }
+
+        .slide-in-left.show,
+        .slide-in-right.show,
+        .slide-in-up.show {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+        }
+
+        /* 穏やかなズーム効果 */
+        .ninja-zoom {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 1.2s ease-out;
+        }
+
+        .ninja-zoom.show {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* 穏やかなホバーエフェクト */
+        .ninja-hover {
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .ninja-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 59, 48, 0.2);
+        }
+
+        .ninja-hover::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: linear-gradient(45deg, #FF3B30, transparent, #FF3B30);
+            z-index: -1;
+            opacity: 0;
+            border-radius: inherit;
+            transition: opacity 0.3s ease;
+        }
+
+        .ninja-hover:hover::before {
+            opacity: 0.5;
+        }
+
+        /* ヒーローテキストのアニメーション */
+        .hero-text {
+            animation: floatText 3s ease-in-out infinite;
+        }
+
+        .hero-text:hover {
+            animation: glitch 0.5s ease-in-out;
+        }
+
+        /* ボタンのパルスエフェクト */
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+
+        .hero-bg {
+            background-image: url('./名称未設定のデザイン (17).png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg,
+                    rgba(255, 59, 48, 0.1) 0%,
+                    transparent 25%,
+                    transparent 75%,
+                    rgba(255, 59, 48, 0.1) 100%);
+            pointer-events: none;
+        }
+
+        .gradient-cta {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            position: relative;
+        }
+
+        .gradient-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg,
+                    rgba(255, 59, 48, 0.1) 0%,
+                    transparent 50%,
+                    rgba(255, 59, 48, 0.1) 100%);
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gradient-cta:hover::before {
+            opacity: 1;
+        }
+
+        .accent-red {
+            color: #FF3B30;
+        }
+
+        .btn-primary {
+            background-color: #FF3B30;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            background-color: #e6342a;
+            transform: translateY(-2px);
+        }
+
+        .shadow-soft {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+        }
+
+        /* チーム カードの穏やかなエフェクト */
+        .team-card {
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 59, 48, 0.15);
+        }
+
+        /* キャラクターギャラリーの穏やかなエフェクト */
+        .character-card {
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .character-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 20px rgba(255, 59, 48, 0.2);
+        }
+
+        .character-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg,
+                    rgba(255, 59, 48, 0.1) 0%,
+                    transparent 50%,
+                    rgba(255, 59, 48, 0.1) 100%);
+            border-radius: inherit;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .character-card:hover::after {
+            opacity: 1;
+        }
+
+        /* ロゴの背景を透明化 */
+        .logo-bg-transparent {
+            background: transparent;
+            border-radius: 50%;
+            object-fit: contain;
+        }
+
+        /* 言語切り替えボタン */
+        .language-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 59, 48, 0.9);
+            border: none;
+            border-radius: 25px;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .language-toggle:hover {
+            background: rgba(255, 59, 48, 1);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- Language Toggle Button -->
+    <button class="language-toggle" id="langToggle" onclick="toggleLanguage()">
+        <span id="langText">EN</span>
+    </button>
+
+    <!-- Hero Section -->
+    <section class="hero-bg relative min-h-screen flex items-start justify-center pt-20">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
+            <div class="ninja-zoom">
+                <div class="mb-8 hero-text">
+                    <img src="CNP×RED゜Logo_1L_white.png" alt="CNP×RED°"
+                        class="mx-auto max-w-md md:max-w-2xl w-full h-auto">
+                </div>
+                <p class="text-lg md:text-xl mb-4 text-gray-300 slide-in-right"
+                    data-ja="国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ"
+                    data-en="Japan's largest NFT brand 'CNP' collaborates with cutting-edge entertainment facility 'RED° TOKYO TOWER'">
+                    国内最大級のNFTブランド『CNP』と最先端エンタメ施設『RED° TOKYO TOWER』が夢のコラボ
+                </p>
+                <p class="text-lg md:text-xl mb-12 text-gray-300 slide-in-left" data-ja="リアル×デジタルが融合した、新時代エンタメを体験しよう"
+                    data-en="Experience next-generation entertainment where real and digital worlds converge">
+                    リアル×デジタルが融合した、新時代エンタメを体験しよう
+                </p>
+                <a href="https://magiceden.io/marketplace/cnp_red"
+                    class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 inline-block"
+                    data-ja="Magic EdenでNFTを見る" data-en="View NFTs on Magic Eden">
+                    Magic EdenでNFTを見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4">
+        <!-- About RED° TOKYO TOWER -->
+        <section class="py-20 slide-in-left">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="slide-in-right">
+                    <img src="GdTatm-bQAAZ4ec.jpg" alt="RED° TOKYO TOWER アトラクション"
+                        class="w-full h-auto rounded-2xl shadow-soft ninja-hover" loading="lazy">
+                </div>
+                <div class="slide-in-left">
+                    <div class="flex items-center mb-6">
+                        <img src="Iu2ezEY4_400x400.jpg" alt="RED° Logo"
+                            class="w-10 h-10 mr-3 ninja-hover logo-bg-transparent">
+                        <h2 class="text-3xl md:text-4xl font-bold"><a href="https://tokyotower.red-brand.jp/"
+                                target="_blank" class="hover:text-red-400 transition-colors">RED° TOKYO TOWER</a></h2>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed"
+                        data-ja="RED° TOKYO TOWER は、東京タワーの足元に位置する最先端のエンターテインメント施設です。eスポーツ、VR、AR技術を駆使したアトラクションで、来場者に未来のエンターテインメント体験を提供します。"
+                        data-en="RED° TOKYO TOWER is a cutting-edge entertainment facility located at the foot of Tokyo Tower. It offers visitors futuristic entertainment experiences through attractions utilizing esports, VR, and AR technologies.">
+                        RED° TOKYO TOWER は、東京タワーの足元に位置する最先端のエンターテインメント施設です。
+                        eスポーツ、VR、AR技術を駆使したアトラクションで、来場者に未来のエンターテインメント体験を提供します。
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed"
+                        data-ja="忍者の世界観をテーマにしたアトラクションや、最新のデジタル技術を使ったインタラクティブな体験が楽しめる、まさに「リアル×デジタル」が融合した新しいエンターテインメント空間です。"
+                        data-en="Enjoy ninja-themed attractions and interactive experiences using the latest digital technology - a truly new entertainment space where 'Real×Digital' converge.">
+                        忍者の世界観をテーマにしたアトラクションや、最新のデジタル技術を使ったインタラクティブな体験が楽しめる、
+                        まさに「リアル×デジタル」が融合した新しいエンターテインメント空間です。
+                    </p>
+                    <p class="text-gray-300 leading-relaxed"
+                        data-ja="CNPとのコラボレーションにより、NFTホルダー限定の特別な体験や、デジタルアートと現実世界が融合した独特な世界観を楽しむことができます。"
+                        data-en="Through collaboration with CNP, you can enjoy exclusive experiences for NFT holders and a unique worldview where digital art and the real world merge.">
+                        CNPとのコラボレーションにより、NFTホルダー限定の特別な体験や、
+                        デジタルアートと現実世界が融合した独特な世界観を楽しむことができます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About CNP -->
+        <section class="py-20 slide-in-right">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 slide-in-right">
+                    <div class="flex items-center mb-6">
+                        <img src="1KLq3xzE_400x400.jpg" alt="CNP Logo"
+                            class="w-10 h-10 mr-3 ninja-hover logo-bg-transparent">
+                        <h2 class="text-3xl md:text-4xl font-bold"><a href="https://www.cryptoninja-partners.xyz/"
+                                target="_blank" class="hover:text-red-400 transition-colors">CNP (Crypto Ninja
+                                Partners)</a></h2>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed"
+                        data-ja="CNP（Crypto Ninja Partners）は、日本国内最大級のNFTコレクションです。可愛らしいキャラクターデザインと、強力なコミュニティによって支えられています。"
+                        data-en="CNP (Crypto Ninja Partners) is Japan's largest NFT collection. It is supported by adorable character designs and a strong community.">
+                        CNP（Crypto Ninja Partners）は、日本国内最大級のNFTコレクションです。
+                        可愛らしいキャラクターデザインと、強力なコミュニティによって支えられています。
+                    </p>
+                    <p class="text-gray-300 mb-6 leading-relaxed"
+                        data-ja="22,222体のユニークなキャラクターが存在し、それぞれが忍者の世界観を持ちながらも、現代的でポップなデザインが特徴的です。単なるデジタルアートを超えて、実用性とコミュニティ価値を重視したNFTプロジェクトです。"
+                        data-en="22,222 unique characters exist, each maintaining a ninja worldview while featuring modern and pop designs. It's an NFT project that goes beyond mere digital art, emphasizing utility and community value.">
+                        22,222体のユニークなキャラクターが存在し、それぞれが忍者の世界観を持ちながらも、
+                        現代的でポップなデザインが特徴的です。単なるデジタルアートを超えて、
+                        実用性とコミュニティ価値を重視したNFTプロジェクトです。
+                    </p>
+                    <p class="text-gray-300 leading-relaxed"
+                        data-ja="CNPホルダーは様々な特典やイベントに参加でき、今回のRED° TOKYO TOWERとのコラボレーションでも、特別な体験を楽しむことができます。"
+                        data-en="CNP holders can participate in various benefits and events, and can enjoy special experiences in this collaboration with RED° TOKYO TOWER.">
+                        CNPホルダーは様々な特典やイベントに参加でき、
+                        今回のRED° TOKYO TOWERとのコラボレーションでも、特別な体験を楽しむことができます。
+                    </p>
+                </div>
+                <div class="order-1 md:order-2 slide-in-left">
+                    <img src="12092-79-d7f1d5b3c24c1a6604bab0f9a608a59d-1337x617.jpg" alt="CNP キャラクター"
+                        class="w-full h-auto rounded-2xl shadow-soft ninja-hover" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Gallery -->
+        <section class="py-20 ninja-zoom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text">Character Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="character-gallery">
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-left">
+                    <img src="./SNSヘッダー掲載版CNP/1342.png" alt="CNP Character #1342"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-up">
+                    <img src="./SNSヘッダー掲載版CNP/2740.png" alt="CNP Character #2740"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-right">
+                    <img src="./SNSヘッダー掲載版CNP/544.png" alt="CNP Character #544"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-left">
+                    <img src="./SNSヘッダー掲載版CNP/9128.png" alt="CNP Character #9128"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-up">
+                    <img src="./SNSヘッダー掲載版CNP/9885.png" alt="CNP Character #9885"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-right">
+                    <img src="./SNSヘッダー掲載版CNP/LUNA_Rainbow_trump.png" alt="LUNA Rainbow Trump"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-left">
+                    <img src="./SNSヘッダー掲載版CNP/webサイト用_HarikoMakami.png" alt="Hariko Makami"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-up">
+                    <img src="./SNSヘッダー掲載版CNP/webサイト用_OmeletteMitama.png" alt="Omelette Mitama"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft character-card slide-in-right">
+                    <img src="./SNSヘッダー掲載版CNP/webサイト用_TokyoTowerOrochi.png" alt="Tokyo Tower Orochi"
+                        class="w-full h-auto object-contain rounded-xl mb-4" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- NFT Marketplace Embed -->
+        <section class="py-20 ninja-zoom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text" data-ja="NFTをチェック"
+                data-en="Check NFTs">
+                <span data-ja="NFTを" data-en="Check ">NFTを</span><span class="accent-red" data-ja="チェック"
+                    data-en="NFTs">チェック</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-center mb-10">
+                <p class="text-gray-300 leading-relaxed"
+                    data-ja="Magic Eden上にあるCNP×RED°メインコレクションとカケラNFTコレクションを埋め込み表示しています。それぞれのNFTをチェックしてお気に入りを探しましょう。"
+                    data-en="Embedded views of both the CNP×RED° main collection and Kakera collection on Magic Eden. Explore each set to find your favorites.">
+                    Magic Eden上にあるCNP×RED°メインコレクションとカケラNFTコレクションを埋め込み表示しています。それぞれのNFTをチェックしてお気に入りを探しましょう。
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="https://magiceden.io/marketplace/cnp_red" target="_blank"
+                    class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center"
+                    data-ja="🔗 CNP×RED°を開く" data-en="🔗 Open CNP×RED°">
+                    🔗 CNP×RED°を開く
+                </a>
+                <a href="https://magiceden.io/marketplace/cnp-red-kakera" target="_blank"
+                    class="px-8 py-4 rounded-full text-lg font-bold border border-red-500 text-red-400 hover:bg-red-500 hover:text-white transition-all duration-300 inline-flex items-center justify-center"
+                    data-ja="🔗 カケラNFTを開く" data-en="🔗 Open Kakera NFTs">
+                    🔗 カケラNFTを開く
+                </a>
+            </div>
+            <div class="space-y-16">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold" data-ja="CNP×RED° メインコレクション" data-en="CNP×RED° Main Collection">
+                        CNP×RED° メインコレクション</h3>
+                    <iframe src="https://magiceden.io/marketplace/cnp_red"
+                        class="w-full rounded-2xl border-2 border-[#FF3B30]" style="height:120vh;"
+                        title="CNP×RED° Main NFT Marketplace" loading="lazy"></iframe>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-bold" data-ja="CNP×RED° カケラNFT" data-en="CNP×RED° Kakera NFTs">CNP×RED°
+                        カケラNFT</h3>
+                    <iframe src="https://magiceden.io/marketplace/cnp-red-kakera"
+                        class="w-full rounded-2xl border-2 border-[#FF3B30]" style="height:120vh;"
+                        title="CNP×RED° Kakera NFT Marketplace" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section class="py-20 ninja-zoom">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text">
+                グッズ<span class="accent-red">ショップ</span>
+            </h2>
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <p class="text-gray-300 mb-8 leading-relaxed"
+                    data-ja="CNP×RED°の公式グッズが登場！<br>限定アイテムやオリジナルデザインのグッズを取り揃えています。"
+                    data-en="Official CNP×RED° goods are here!<br>We offer limited items and original design merchandise.">
+                    CNP×RED°の公式グッズが登場！<br>
+                    限定アイテムやオリジナルデザインのグッズを取り揃えています。
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="https://cnpred.official.ec/" target="_blank"
+                        class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 inline-block ninja-hover"
+                        data-ja="🛒 公式ショップを見る" data-en="🛒 Visit Official Shop">
+                        🛒 公式ショップを見る
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+                <div class="bg-gray-900 rounded-2xl p-4 shadow-soft">
+                    <img src="./shop-images/goods-hankachi.jpg" alt="CNP×RED°コラボハンカチ"
+                        class="w-full h-auto object-cover rounded-xl ninja-hover" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-4 shadow-soft">
+                    <img src="./shop-images/goods-stand.webp" alt="CNP×RED°アクリルスタンド"
+                        class="w-full h-auto object-cover rounded-xl ninja-hover" loading="lazy">
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-4 shadow-soft">
+                    <img src="./shop-images/goods-art.png" alt="CNP×RED°アートプリント"
+                        class="w-full h-auto object-cover rounded-xl ninja-hover" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team Section -->
+        <section class="py-20 slide-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text">CNP×RED°<span
+                    class="accent-red">運営チーム</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-left">
+                    <img src="2R60kWaF_400x400.jpg" alt="むなかた総理"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">むなかた総理</h3>
+                    <p class="text-gray-400 mb-4">CNPRED゜エンジニア担当</p>
+                    <a href="https://x.com/munakata_souri" target="_blank" rel="noopener noreferrer"
+                        class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-up">
+                    <img src="1749054260.jpg" alt="kishino"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">kishino</h3>
+                    <p class="text-gray-400 mb-4">CNPRED゜クリエイティブ担当</p>
+                    <a href="https://x.com/_kishino" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-right">
+                    <img src="DolNRg5L_400x400.jpg" alt="ZM"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">ZM</h3>
+                    <p class="text-gray-400 mb-4">Founder</p>
+                    <a href="https://x.com/sevenzmjp" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-left">
+                    <img src="0kFfMoio_400x400.jpg" alt="KK"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">KK</h3>
+                    <p class="text-gray-400 mb-4">イベント企画、テック担当</p>
+                    <a href="https://x.com/RED_KK7" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-up">
+                    <img src="p_egx9GY_400x400.jpg" alt="scale294a.k.aすかれ"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">scale294a.k.aすかれ</h3>
+                    <p class="text-gray-400 mb-4">マーケティング担当</p>
+                    <a href="https://x.com/aPXHKkMkz4zT5Tw" target="_blank"
+                        class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-right">
+                    <img src="Eazz8HbV_400x400.jpg" alt="ALilyK"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">ALilyK</h3>
+                    <p class="text-gray-400 mb-4">マーケティング、グッズ担当</p>
+                    <a href="https://x.com/alilyk_J" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-left">
+                    <img src="t-iYwDbJ_400x400.jpg" alt="AN"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">AN</h3>
+                    <p class="text-gray-400 mb-4">コミュニティ、マーケティング、イベント、トークン設計担当</p>
+                    <a href="https://x.com/AN_red_AN" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-up">
+                    <img src="PoVHc6wF_400x400.jpg" alt="7u1(ﾅｳｲ)"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">7u1(ﾅｳｲ)</h3>
+                    <p class="text-gray-400 mb-4">エンタメ、イベント企画、グッズ制作、ユーザーサポート、マーケティング担当</p>
+                    <a href="https://x.com/7u1_tori" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+                <div class="bg-gray-900 rounded-2xl p-6 shadow-soft text-center team-card slide-in-right">
+                    <img src="ikbcPeYS_400x400.jpg" alt="415(よいこ)"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 object-cover ninja-hover">
+                    <h3 class="text-xl font-bold mb-2">415(よいこ)</h3>
+                    <p class="text-gray-400 mb-4">データ分析、グッズ制作、テック、コミュニティ担当</p>
+                    <a href="https://x.com/test2024first" target="_blank"
+                        class="text-blue-400 hover:text-blue-300 text-sm">
+                        Follow on X →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-20 ninja-zoom">
+            <div class="gradient-cta rounded-2xl p-12 text-center shadow-soft ninja-hover">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 hero-text" data-ja="今すぐ、コミュニティに参加しよう"
+                    data-en="Join the Community Now">
+                    今すぐ、コミュニティに参加しよう
+                </h2>
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <a href="https://kakera.click/" target="_blank"
+                        class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 ninja-hover"
+                        data-ja="CNP×RED° KAKERANFT" data-en="CNP×RED° KAKERANFT">
+                        CNP×RED° KAKERANFT
+                    </a>
+                    <a href="https://magiceden.io/marketplace/cnp_red" target="_blank"
+                        class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300">
+                        Magic Eden
+                    </a>
+                    <a href="https://cnpred.official.ec/" target="_blank"
+                        class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 ninja-hover"
+                        data-ja="🛒 グッズショップ" data-en="🛒 Goods Shop">
+                        🛒 グッズショップ
+                    </a>
+                    <a href="https://x.com/cnp_red" target="_blank"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 ninja-hover"
+                        data-ja="X をフォロー" data-en="Follow on X">
+                        X をフォロー
+                    </a>
+                    <a href="https://discord.gg/KaywkqKwcK" target="_blank"
+                        class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 ninja-hover"
+                        data-ja="Discord 招待" data-en="Discord Invite">
+                        Discord 招待
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guideline Section -->
+        <section class="py-20 slide-in-up">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text">CNP×RED°<span
+                    class="accent-red">ガイドライン</span></h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-300 mb-8 leading-relaxed"
+                    data-ja="CNP×RED°の二次創作や活動に関する公式ガイドラインです。<br>ホルダーの皆様も、そうでない方も、ぜひご一読ください。"
+                    data-en="Official guidelines for CNP×RED° derivative works and activities.<br>Please read this whether you are a holder or not.">
+                    CNP×RED°の二次創作や活動に関する公式ガイドラインです。<br>
+                    ホルダーの皆様も、そうでない方も、ぜひご一読ください。
+                </p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://drive.google.com/file/d/1zN5_2lneDyMOc0TzRdLqtqzsGZM5M7az/view?usp=sharing"
+                        target="_blank"
+                        class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 inline-block"
+                        data-ja="ガイドラインPDFを開く" data-en="Open Guidelines PDF">
+                        ガイドラインPDFを開く
+                    </a>
+                    <a href="https://docs.google.com/document/d/1YCExeYiB04Zyx7-e97-NA_sqxhWElIvcBX8bdeEJU7E/edit?usp=sharing"
+                        target="_blank"
+                        class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 inline-block"
+                        data-ja="詳細資料" data-en="Detailed Materials">
+                        詳細資料
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- New Contact Form Section -->
+    <section id="contact" class="py-20 ninja-zoom">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 hero-text" data-ja="お問い合わせ" data-en="Contact Us">
+            <span data-ja="お問い合わせ" data-en="Contact Us">お問い合わせ</span>
+        </h2>
+        <div class="max-w-2xl mx-auto bg-gray-900 rounded-2xl p-8 shadow-soft ninja-hover">
+            <form id="custom-contact-form"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSecgPRUXUFWXvlBYcMxt_TQouotSjybiU1pUx6Aq7RdFGGPOQ/formResponse"
+                method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                <div class="mb-6">
+                    <label for="entry.597833012" class="block text-white text-sm font-bold mb-2"
+                        data-ja="Xアカウント（＠を含む）<span class='text-red-500'>*</span>"
+                        data-en="X Account (including @)<span class='text-red-500'>*</span>">Xアカウント（＠を含む）<span
+                            class='text-red-500'>*</span></label>
+                    <input type="text" id="entry.597833012" name="entry.597833012"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-red-500 transition-all"
+                        required>
+                </div>
+                <div class="mb-6">
+                    <label for="entry.565127627" class="block text-white text-sm font-bold mb-2" data-ja="DiscordID"
+                        data-en="Discord ID">DiscordID</label>
+                    <input type="text" id="entry.565127627" name="entry.565127627"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-red-500 transition-all">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-white text-sm font-bold mb-2"
+                        data-ja="ご相談内容<span class='text-red-500'>*</span>"
+                        data-en="Inquiry<span class='text-red-500'>*</span>">ご相談内容<span
+                            class='text-red-500'>*</span></label>
+                    <div class="mt-2 space-y-2">
+                        <div>
+                            <input type="radio" id="entry.2097345783_CNPRED" name="entry.2097345783" value="CNPRED゜に関して"
+                                class="form-radio h-4 w-4 text-red-500 border-gray-700 bg-gray-800 focus:ring-red-500"
+                                required>
+                            <label for="entry.2097345783_CNPRED" class="ml-2 text-white">CNPRED゜に関して</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="entry.2097345783_KAKERANFT" name="entry.2097345783"
+                                value="カケラNFTに関して"
+                                class="form-radio h-4 w-4 text-red-500 border-gray-700 bg-gray-800 focus:ring-red-500"
+                                required>
+                            <label for="entry.2097345783_KAKERANFT" class="ml-2 text-white">カケラNFTに関して</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="entry.2097345783_DISCORD" name="entry.2097345783" value="ディスコードに関して"
+                                class="form-radio h-4 w-4 text-red-500 border-gray-700 bg-gray-800 focus:ring-red-500"
+                                required>
+                            <label for="entry.2097345783_DISCORD" class="ml-2 text-white">ディスコードに関して</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="entry.2097345783_GOODS" name="entry.2097345783" value="グッズに関して"
+                                class="form-radio h-4 w-4 text-red-500 border-gray-700 bg-gray-800 focus:ring-red-500"
+                                required>
+                            <label for="entry.2097345783_GOODS" class="ml-2 text-white">グッズに関して</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label for="entry.2048386085" class="block text-white text-sm font-bold mb-2"
+                        data-ja="質問・お問い合わせ<span class='text-red-500'>*</span>"
+                        data-en="Questions/Inquiries<span class='text-red-500'>*</span>">質問・お問い合わせ<span
+                            class='text-red-500'>*</span></label>
+                    <textarea id="entry.2048386085" name="entry.2048386085" rows="5"
+                        class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:border-red-500 transition-all"
+                        required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="btn-primary btn-pulse px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300">
+                        <span data-ja="送信する" data-en="Send Message">送信する</span>
+                    </button>
+                </div>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                onload="if(submitted) {document.getElementById('custom-contact-form').style.display='none'; document.getElementById('custom-thank-you-message').style.display='block';}"></iframe>
+            <div id="custom-thank-you-message" style="display:none;" class="text-center py-12">
+                <h3 class="text-2xl font-bold mb-4" data-ja="ご回答ありがとうございます" data-en="Thank you for your submission!">
+                    ご回答ありがとうございます</h3>
+                <p class="text-gray-300" data-ja="メッセージが送信されました。" data-en="Your message has been sent.">メッセージが送信されました。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisement -->
+    <section class="py-10">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AV80E+GCTQ2A+5PZK+5ZU29" rel="nofollow">
+                <img border="0" width="728" height="90" alt="" src="https://www25.a8.net/svt/bgt?aid=260117582989&wid=001&eno=01&mid=s00000026696001007000&mc=1" class="mx-auto"></a>
+            <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80E+GCTQ2A+5PZK+5ZU29" alt="">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center mb-6">
+                <img src="203017 (1).jpg" alt="CNP×RED° Logo" class="w-16 h-auto logo-bg-transparent mr-3">
+                <h3 class="text-xl font-bold text-white">CNP×RED°</h3>
+            </div>
+            <p class="text-gray-400 mb-4">© 2025 CNP×RED°</p>
+            <div class="flex justify-center space-x-6">
+                <a href="site-policy.html" class="text-gray-500 hover:text-gray-400 text-sm">免責事項・サイトポリシー</a>
+                <a href="privacy-policy.html" class="text-gray-500 hover:text-gray-400 text-sm">プライバシーポリシー</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 忍者風アニメーション用のIntersection Observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, observerOptions);
+
+        // 忍者風アニメーションクラスを観察
+        const animationClasses = [
+            '.slide-in-left',
+            '.slide-in-right',
+            '.slide-in-up',
+            '.ninja-zoom'
+        ];
+
+        animationClasses.forEach(className => {
+            document.querySelectorAll(className).forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // ヒーローセクションの個別アニメーション
+        setTimeout(() => {
+            const heroElements = document.querySelectorAll('.ninja-zoom .slide-in-left, .ninja-zoom .slide-in-right');
+            heroElements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('show');
+                }, index * 300); // 間隔を長く
+            });
+        }, 800); // 開始を遅く
+
+        // キャラクターギャラリーの段階的アニメーション
+        const characterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.querySelectorAll('.character-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('show');
+                        }, index * 200); // 間隔を長く
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.character-grid').forEach(el => {
+            characterObserver.observe(el.parentElement);
+        });
+
+        // チームカードの段階的アニメーション
+        const teamObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.querySelectorAll('.team-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.classList.add('show');
+                        }, index * 250); // 間隔を長く
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.team-card').forEach(el => {
+            teamObserver.observe(el.parentElement);
+        });
+
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // CNP画像のランダム化
+        const cnpImages = [
+            './SNSヘッダー掲載版CNP/1342.png',
+            './SNSヘッダー掲載版CNP/2740.png',
+            './SNSヘッダー掲載版CNP/544.png',
+            './SNSヘッダー掲載版CNP/9128.png',
+            './SNSヘッダー掲載版CNP/9885.png',
+            './SNSヘッダー掲載版CNP/LUNA_Rainbow_trump.png',
+            './SNSヘッダー掲載版CNP/webサイト用_HarikoMakami.png',
+            './SNSヘッダー掲載版CNP/webサイト用_OmeletteMitama.png',
+            './SNSヘッダー掲載版CNP/webサイト用_TokyoTowerOrochi.png'
+        ];
+
+        // キャラクターギャラリーの画像をランダム化
+        function randomizeCharacterGallery() {
+            const characterCards = document.querySelectorAll('#character-gallery .character-card img');
+            const shuffledImages = [...cnpImages].sort(() => Math.random() - 0.5);
+
+            characterCards.forEach((img, index) => {
+                const imageIndex = index % shuffledImages.length;
+                const imagePath = shuffledImages[imageIndex];
+
+                // ファイル名から適切な名前を生成
+                const fileName = imagePath.split('/').pop().replace('.png', '');
+                let characterName;
+
+                if (fileName.match(/^\d+$/)) {
+                    // 数字のみの場合
+                    characterName = `CNP Character #${fileName}`;
+                } else if (fileName.includes('webサイト用_')) {
+                    // webサイト用の特別キャラクター
+                    characterName = fileName.replace('webサイト用_', '');
+                } else {
+                    // その他（LUNA_Rainbow_trump等）
+                    characterName = fileName.replace(/_/g, ' ');
+                    claude
+                }
+
+                img.src = imagePath;
+                img.alt = characterName;
+            });
+        }
+
+        // ページ読み込み時にランダム化
+        document.addEventListener('DOMContentLoaded', randomizeCharacterGallery);
+
+        // 2分ごとにキャラクターをランダムに変更
+        setInterval(() => {
+            randomizeCharacterGallery();
+        }, 120000); // 2分間隔に延長
+
+        // 控えめなグリッチエフェクト
+        setInterval(() => {
+            const heroText = document.querySelector('.hero-text');
+            if (heroText && Math.random() < 0.01) { // 1%の確率に減少
+                heroText.style.animation = 'glitch 0.2s ease-in-out';
+                setTimeout(() => {
+                    heroText.style.animation = 'floatText 3s ease-in-out infinite';
+                }, 200);
+            }
+        }, 5000); // 5秒間隔に延長
+
+        // Language Toggle Functionality
+        let currentLanguage = 'ja'; // デフォルトは日本語
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'ja' ? 'en' : 'ja';
+            updateLanguage();
+
+            // ボタンテキストを更新
+            const langButton = document.getElementById('langText');
+            langButton.textContent = currentLanguage === 'ja' ? 'EN' : 'JP';
+
+            // 言語設定をローカルストレージに保存
+            localStorage.setItem('preferredLanguage', currentLanguage);
+        }
+
+        function updateLanguage() {
+            // data-ja または data-en 属性を持つすべての要素を取得
+            const elements = document.querySelectorAll('[data-ja][data-en]');
+
+            elements.forEach(element => {
+                const text = element.getAttribute(`data-${currentLanguage}`);
+                if (text) {
+                    // HTMLタグが含まれている可能性があるため、innerHTMLを使用
+                    if (element.tagName === 'A' || element.tagName === 'BUTTON') {
+                        element.textContent = text;
+                    } else {
+                        element.innerHTML = text;
+                    }
+                }
+            });
+        }
+
+        // ページ読み込み時に保存された言語設定を復元
+        document.addEventListener('DOMContentLoaded', function () {
+            const savedLanguage = localStorage.getItem('preferredLanguage');
+            if (savedLanguage && savedLanguage !== currentLanguage) {
+                currentLanguage = savedLanguage;
+                updateLanguage();
+                const langButton = document.getElementById('langText');
+                langButton.textContent = currentLanguage === 'ja' ? 'EN' : 'JP';
+            }
+        });
+
+        // Twitter Widget Script
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));
+
+        let submitted = false;
+    </script>
+
+
+</body>
+
+</html>
